@@ -1,0 +1,15 @@
+[submodule "type_and_learn_websockets"]
+	path = type_and_learn_websockets
+	url = https://github.com/tothpeter/type_and_learn_websockets
+[submodule "type_and_learn_client"]
+	path = type_and_learn_client
+	url = https://github.com/tothpeter/type_and_learn_client
+[submodule "type_and_learn_api"]
+	path = type_and_learn_api
+	url = https://github.com/tothpeter/type_and_learn_api
+[submodule "type_and_learn_chrome_extension"]
+	path = type_and_learn_chrome_extension
+	url = https://github.com/tothpeter/type_and_learn_chrome_extension
+[submodule "type_and_learn_web"]
+	path = type_and_learn_web
+	url = https://github.com/tothpeter/type_and_learn_web
