@@ -35,7 +35,7 @@ __The manual process:__
 - At this point the new version is available in production using the `version` url param: type-and-learn.kalina.tech/?version=canary
 - If everything works fine, then activate the new release in the Redis store.
 
-### The web service
+### Web service
 
 [GitHub](https://github.com/tothpeter/type_and_learn_web)
 
@@ -93,8 +93,9 @@ I used RSpec for automated tests to cover the core functionality and to reach a 
 
 [GitHub](https://github.com/tothpeter/type_and_learn_chrome_extension)
 
-After you sign in with your Type and Learn account, you can add any text from any page to your cards by following these steps:
+You can create new cards from the highlighted text on a website by following these steps:
 
+- Sign in with your Type and Learn account.
 - Highlight the text.
 - Right click on it.
 - Choose `add to Type and Learn` from the local menu.
@@ -102,10 +103,10 @@ After you sign in with your Type and Learn account, you can add any text from an
 - Hit the save button.
 - [Disco!](https://www.youtube.com/watch?v=UkSPUDpe0U8)
 
-### Production server
+### Production
 
-I used to run the project on my old laptop in my living room, which I built up from scratch using Ubuntu.
-
-There was an NGINX HTTP server in the front line that routed the requests to the corresponding application server.
-
-The API and the socket service used the puma app server, the web project was running on unicorn.
+I turned my old laptop into a Linux server to host the project.
+I put an NGINX HTTP server into the front line to route the requests to the corresponding services.
+I used the puma app server to run the services.
+I used S3 to store the static assets.
+I created a deploy script for each project to be able to deploy and rollback with the press of a button.
